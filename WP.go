@@ -67,6 +67,7 @@ func (wp *WorkerPool) RemoveWorker() {
 	wp.workerCount--
 }
 
+// добавление задачи 
 func (wp *WorkerPool) AddJob(job string) {
 	wp.jobs <- job
 }
